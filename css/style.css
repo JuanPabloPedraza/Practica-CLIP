@@ -2,6 +2,8 @@
 
 body{
     overflow-x: hidden;
+    font-family: 'Cinzel', serif;
+    color: #616971;
 }
 
 
@@ -15,6 +17,8 @@ body{
     font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+    z-index: 1;
 }
 
 .nav-item {
@@ -28,4 +32,47 @@ body{
 .nav-link.active,
 .nav-link:hover {
     color: #4981b3!important;
+}
+
+/*============ CAROUSEL ==========*/
+
+
+#carousel {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.carousel-inner{
+    max-height: 50rem!important;
+}
+
+/*============CHANGE CAROUSEL TRANSITION SPEED ==========*/
+
+/*============ CAROUSEL Content ==========*/
+
+.carousel-caption{
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+
+}
+
+.bg-custom{
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+}
+
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+
+.border-primary {
+    border-top: .2rem solid #4981b3!important;
+}
+
+.carousel-caption h3{
+    font-size: 2.8rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
 }
