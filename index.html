@@ -17,7 +17,7 @@
     <nav class="navbar bg-gray navbar-light navbar-expand-lg">
       <div class="container">
 
-        <a href="index.html" class="navbar-brand"><img src="img/esparta.png" alt="Logo" title="Logo"></a>
+        <a href="index.html" class="navbar-brand"><img src="img/CodingLogo.png" alt="Logo" title="Logo">print("Hello World");</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
@@ -25,11 +25,11 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+            <li class="nav-item"><a href="#Tecnologias" class="nav-link">Tecnologias</a></li>
+            <li class="nav-item"><a href="#Info" class="nav-link">Info</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Actividades</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contáctanos</a></li>
           </ul>
 
         </div>
@@ -39,7 +39,7 @@
     <!-- End Navigation -->
 
     <!-- Image Carousel-->
-    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="27000">
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3500">
 
     <!-- Carousel Content-->
       <div class="carousel-inner">
@@ -85,32 +85,130 @@
 
 
     <!-- End Previous & Next Buttons-->
-
-
     </div>
 
     <!-- End Image Navigation -->
 
     <!-- Main Page Heading -->
-    <div class="col-12 text-center mt-5">
+    <div class="col-12 text-center mt-5" id="Tecnologias">
       <h1 class="text-dark pt-4">Empezemos</h1>
       <div class="border-top border-primary w-25 mx-auto my-3"></div>
-      <p class="lead">Tecnologias que usaremos</p>
+      <p class="lead">Algunas Tecnologias Que Veremos</p>
     </div>
 
     <!-- Seccion de 3 columnas -->
 
     <div class="container">
       <div class="row my-5">
+
         <div class="col-md-4 my-4">
-          <img src="img/javascript.jpg" alt="" class="w-100">
+          <img src="img/javascript.jpg" alt="" class="w-100" width="100" height="250">
+          <h4 class="my-4">JavaScript</h4>
+          <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. 
+            Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+            <a href="https://www.javascript.com/" class="btn btn-outline-dark btn-md" target="_blank">Más Info</a>
         </div>
+
+        <div class="col-md-4 my-4">
+          <img src="img/NodeJs.jpg" alt="" class="w-100" width="100" height="250">
+          <h4 class="my-4">NodeJs</h4>
+          <p>Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el 
+            lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.</p>
+            <a href="https://nodejs.org/es/" class="btn btn-outline-dark btn-md" target="_blank">Más Info</a>
+        </div>
+
+        <div class="col-md-4 my-4">
+          <img src="img/mongodb.png" alt="" class="w-100" width="100" height="250">
+          <h4 class="my-4">MongoDB</h4>
+          <p>MongoDB es una base de datos distribuida, basada en documentos y de uso general que ha sido diseñada para desarrolladores de 
+            aplicaciones modernas y para la era de la nube. Ninguna otra ofrece un nivel de productividad de uso tan alto.</p>
+            <a href="https://www.mongodb.com/es" class="btn btn-outline-dark btn-md" target="_blank">Más Info</a>
+        </div>
+
       </div>
     </div>
+    <!-- End Main Page Heading -->
 
+    <!-- Second Page Heading -->
+    <div class="col-12 text-center mt-5" id="Info">
+      <h1 class="text-dark pt-4">Planificación de Estudio</h1>
+      <div class="border-top border-primary w-25 mx-auto my-3"></div>
+      <p class="lead">Cronograma de Actividades</p>
+    </div>
+
+
+
+    <div class="container">
+      <table class="table table-responsive table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Semana</th>
+            <th scope="col">Tema</th>
+            <th scope="col">Link del Tema</th>
+            <th scope="col">Material de Estudio Complementario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>HTML</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Info HTML</a></td>
+            <td><a href="https://www.youtube.com/watch?v=UB1O30fR-EE&t=570s" target="_blank">HTML Crash Course For Absolute Beginners</a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>CSS</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Info CSS</a></td>
+            <td><a href="https://www.youtube.com/watch?v=yfoY53QXEnI" target="_blank">CSS Crash Course For Absolute Beginners</a></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Bootstrap</td>
+            <td><a href="https://getbootstrap.com/" target="_blank">Info Bootstrap</a></td>
+            <td><a href="https://www.youtube.com/watch?v=ZfRn9VJzdGA" target="_blank">Complete Bootstrap Crash Course | Bootstrap 4 Tutorial</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+ <!-- End Second Page Heading -->
    
+<!-- Contact us -->
+
+<div class="container py-2 my-5" id="contacto">
+  <div class="text-center">
+    <h2>Contáctanos</h2>
+    <h4 class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quam labore ipsum consequatur doloremque quas eum sequi nam exercitationem fugiat minus molestiae soluta, esse facilis hic autem aliquam voluptate corrupti.</h4>
+  </div>
+  <form action="#" class="row justify-content-center" >
+    <div class="form-group col-md-3" >
+      <input type="text" placeholder="Nombre" class="form-control" minlength="5" maxlength="30" required>
+    </div>
+    <div class="form-group col-md-3" >
+      <input type="email" placeholder="E-mail" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    </div> 
+    <div class="form-group col-md-3">
+      <input type="text" placeholder="Telefono" class="form-control"  pattern="\d{7,15}"  required>
+    </div>
+    <div class="col-md-12 py-4">
+      <div class="row justify-content-center">
+        <button class="btn btn-primary col-md-2">Enviar</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- END Contact us -->
+
+<footer class="container-fluid bg-dark text-center text-white py-5">
+<p>Sitio Web desarrollado por Pedraza Juan Pablo</p>
+</footer>
+
+
+
+
     <!-- End socket -->
-<div class="container my-5"></div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
