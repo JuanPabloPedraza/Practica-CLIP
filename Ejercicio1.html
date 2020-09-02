@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style2 CSS -->
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">   
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar bg-gray navbar-light navbar-expand-lg">
+        <div class="container">
+  
+          <a href="index.html" class="navbar-brand"><img src="img/CodingLogo.png" alt="Logo" title="Logo">print("Hello World");</a>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+              <li class="nav-item"><a href="#Tecnologias" class="nav-link">Tecnologias</a></li>
+              <li class="nav-item"><a href="#Info" class="nav-link">Info</a></li>
+              <li class="nav-item"><a href="Ejercicio1.html" class="nav-link">Actividades</a></li>
+              <li class="nav-item"><a href="#contacto" class="nav-link">Contáctanos</a></li>
+            </ul>
+  
+          </div>
+  
+        </div>
+      </nav>
+
+
+    <div class="container text-center  align-self-center" id="boxAdivinanza" >
+        <h1>Adivinanza</h1>
+        <p>¿Qué es algo y nada a la vez? </p>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <label for="">Ingrese su Respuesta:</label>
+                <input type="text" name="" id="texto1" class="form-control">
+            </div>
+            <div class="col-md-12 py-4">
+                <div class="row justify-content-center">
+                    <h5 id="BoxRespuesta" class="col-md-4"></h5>
+                </div>
+            </div>
+        </div> 
+        <button class="btn btn-warning" onclick="Adivina()">Enviar Respuesta</button>
+    </div>
+
+
+    <script>
+        
+        let contador = 0;
+        function Adivina() {
+
+            var resp = document.getElementById("texto1").value;
+           
+            if (resp == "pez") {
+                document.getElementById("BoxRespuesta").innerHTML="GANASTE, FELICITACIONES";
+                }
+            else{
+                contador++;
+                document.getElementById("BoxRespuesta").innerHTML="Respuesta Equivocada";
+            }
+            if(resp != "pez" && contador == 2){
+                document.getElementById("BoxRespuesta").innerHTML="Empieza con P, te quedan 2 intentos.";
+            }
+            if (resp != "pez" && contador == 3) {
+                document.getElementById("BoxRespuesta").innerHTML="Esta en el agua, te queda 1 intento.";
+            }
+            if (resp != "pez" && contador == 4) {
+                document.getElementById("BoxRespuesta").innerHTML="Perdiste, vuelve a intentarlo.";  
+                contador = 0;
+            }
+            
+        }
+
+    </script>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
